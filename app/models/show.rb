@@ -8,4 +8,8 @@ class Show < ActiveRecord::Base
     Show.order(rating: :desc).first
   end
 
+  ef Show::lowest_rating
+    Show.order(rating: :asc).first
+  end
+
 end
